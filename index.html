@@ -154,7 +154,7 @@ productions.forEach(function(p, i) {
   var cta = hasVideo
     ? '<span class="card-cta">Watch Performance <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>'
     : '';
-  card.innerHTML = img + '<div class="card-overlay"></div><div class="card-info"><p class="card-year">' + p.year + '</p><h3 class="card-title">' + p.title + '</h3><p class="card-role">' + p.role + '</p>' + cta + '</div>';
+  card.innerHTML = img + '<div class="card-overlay"></div>' + cta + '<div class="card-info"><p class="card-year">' + p.year + '</p><h3 class="card-title">' + p.title + '</h3><p class="card-role">' + p.role + '</p></div>';
   grid.appendChild(card);
 });
 
